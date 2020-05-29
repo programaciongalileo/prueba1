@@ -18,8 +18,28 @@ public class Prueba1git {
      */
     public static void main(String[] args) {
         Scanner teclado=new Scanner(System.in);
-        System.out.println("Teclea el nombre de un mes y te diré los días que tiene:");
+        System.out.println("Teclea el nombre de un mes:");
         String mes=teclado.nextLine();
+         switch(mes){
+            case "enero":
+            case "marzo":
+            case "mayo":
+            case "julio":
+            case "agosto":
+            case "octubre":
+            case "diciembre":
+                System.out.println("31 días");
+                break;
+            case "abril":
+            case "junio":
+            case "septiembre":
+            case "noviembre":
+                System.out.println("31 días");
+                break;
+            case "febrero":
+                System.out.println("28 días ó 29 días si el año es bisiesto");
+                break;
+        }
     }
     
 }
